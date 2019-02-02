@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+        #center{
+            text-align: center;
+            color: rgb(25, 102, 177);
+            font-weight: 300;
+        }
+        #todo1{
+            text-align: center;
+            width: 500px;
+            height: 30px;
+            border: 2px solid dodgerblue;
+            border-radius: 7px; 
+        }
+        #todo2{
+            text-align: center;
+            margin-top: 15px;
+            width: 90px;
+            height: 30px;
+            background-color: dodgerblue;
+            border: 1px solid dodgerblue;
+            color: ghostwhite;
+            font-size: 15px;
+            font-weight: bold; 
+            border-radius: 50px;
+        }
+        form{
+            text-align: center;
+        } 
+
+</style>
+<script>
+    function todoList() {
+        // store user value
+        var item    = document.getElementById("todo1").value
+        // create a text node from the user input
+        var text    = document.createTextNode(item)
+        // create a li tag
+        var newItem = document.createElement("li")
+        // add the user input to the li tag
+        newItem.appendChild(text)
+        // append the li to the html todoList id tag
+       document.getElementById("todolist").appendChild(newItem);
+    }
+</script>
+</head>
+<body>
+    
+    <h1 id="center">To Do List App</h1>
+    <form  id="todoform">
+    <input type="text" id="todo1">
+    <br />
+    <button type="button" id="todo2" onclick="todoList()">Add</button>
+</form>
+<ul id="todolist">
+</uls>
+</body>
+</html>

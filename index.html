@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title></title>
+    <style type="text/css">
+body{
+    background-color: #faebd7;
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 60px;
+}
+div {
+    border: 2px solid #000000;
+    text-align: center;
+    width: 700px;
+    margin: auto;
+    margin-top: 50px;
+    background-color:  darkblue;
+    border: 2px solid black;
+    border-radius: 100px;
+}
+.Calculator {
+    text-align: center;
+}
+#Display{
+    width: 280px;
+    line-height: 2;
+    text-align: right;
+    width: 450px;
+    border-radius: 100px;
+    font-size: larger;
+    padding-right: 20px;
+}
+input[type="button"] {
+    border-radius: 100px;
+    font-size: 20px;
+    color: #8a2be2;
+    width: 90px;
+    font-weight: 600;
+}
+input [type="button"]:hover {
+    background-color: blue;
+    color: red;
+}
+    </style>
+</head>
+<body>
+<div>
+<h1>Simple Calculator</h1>
+<form  name="Calculator" class="Calculator" >
+<input type="text" name="Calc" id="Display"  placeholder="Any Value  " /><br><br>
+<input  type="button" name="btn9" value="9" onclick="Calculator.Calc.value  += '9'"></button>
+<input  type="button" name="btn8" value="8" onclick="Calculator.Calc.value  += '8'"></button>
+<input  type="button" name="btn7" value="7" onclick="Calculator.Calc.value  += '7'"></button>
+<input  type="button" name="btn-" value="-" onclick="Calculator.Calc.value  += '-'"></button>
+<br>
+<br>
+<input  type="button" name="btn6" value="6" onclick="Calculator.Calc.value  += '6'"></button>
+<input  type="button" name="btn5" value="5" onclick="Calculator.Calc.value  += '5'"></button>
+<input  type="button" name="btn4" value="4" onclick="Calculator.Calc.value  += '4'"></button>
+<input  type="button" name="btn+" value="+" onclick="Calculator.Calc.value  += '+'"></button>
+<br>
+<br>
+<input  type="button" name="btn3" value="3" onclick="Calculator.Calc.value  += '3'"></button>
+<input  type="button" name="btn2" value="2" onclick="Calculator.Calc.value  += '2'"></button>
+<input  type="button" name="btn1" value="1" onclick="Calculator.Calc.value  += '1'"></button>
+<input  type="button" name="btn*" value="*" onclick="Calculator.Calc.value  += '*'"></button>
+    <br>
+    <br>
+<input type="button" name="btn0"  value="0" onclick="Calculator.Calc.value += '0'" ></button>
+<input type="button"  name="btn/"  value="/" onclick="Calculator.Calc.value  += '/'" ></button>
+<input type="button" name="btn." value="." onclick="Calculator.Calc.value += '.'"></button>
+<input  type="button" name="Clear All" value="C" onclick="Calculator.Calc.value = '' " ></button>
+
+    <br>
+    <br>
+    <input  type="button" name="btn=" value="=" onclick="Calculator.Calc.value = eval(Calculator.Calc.value)"></button>
+</form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="App.js"></script>
+</body>
+</html>
